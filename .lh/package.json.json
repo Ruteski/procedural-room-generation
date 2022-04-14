@@ -1,0 +1,22 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1649807283122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649807324994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\r\n   \"main\": \"uppercaseKcClients.js\",\r\n   \"scripts\": {\r\n     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r\n-    \"dev\": \"yarn room.js\"\r\n+    \"dev\": \"node room.js\"\r\n   },\r\n   \"keywords\": [],\r\n   \"author\": \"\",\r\n   \"license\": \"ISC\",\r\n"
+                }
+            ],
+            "date": 1649807283121,
+            "name": "Commit-0",
+            "content": "{\r\n  \"name\": \"procedural-room-generation\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"uppercaseKcClients.js\",\r\n  \"scripts\": {\r\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r\n    \"dev\": \"yarn room.js\"\r\n  },\r\n  \"keywords\": [],\r\n  \"author\": \"\",\r\n  \"license\": \"ISC\",\r\n  \"dependencies\": {\r\n    \"seedrandom\": \"^3.0.5\"\r\n  }\r\n}"
+        }
+    ]
+}

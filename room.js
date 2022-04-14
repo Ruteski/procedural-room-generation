@@ -1,4 +1,7 @@
-const seed = "gagonilson";
+
+const maxSeeders = getMaxSeeders(94);
+const seed = getSeed(maxSeeders, 94);
+console.log('  seed gerado',seed);
 const mapHeight = 40;
 const mapWidth = 80;
 const maxRooms = 40;
@@ -8,7 +11,7 @@ const maxPassagesPerRoom = 4;
 const maxTrapsPerRoom = 5;
 const maxTreasuresPerRoom = 3;
 const maxMobsPerRoom = 5;
-const overlap = true;
+const overlap = true; 
 
 const START_POINT = 0;
 const BUILDABLE = 1;
@@ -25,6 +28,25 @@ const DIRECTIONS = { 1: "top", 2: "bottom", 3: "left", 4: "right" };
 
 const { astar, Graph } = require("./astar");
 const seedrandom = require("seedrandom");
+
+function getMaxSeeders(max) {
+  return parseInt(Math.floor(Math.random() * max + 1));
+}
+
+function getSeed(seeds, max) {
+  const seeders = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%¨&*()_+'-=/*,.;/<>:?`´~^º";
+
+  let seed = "";
+  let contador = 0;
+  let posicao = 0;
+  
+  while (contador <= seeds) {
+     posicao = getMaxSeeders(max);
+     seed += seeders[posicao];
+     contador++;
+  }
+  return seed;
+}
 
 let rng;
 const initRandom = (seed) => {
